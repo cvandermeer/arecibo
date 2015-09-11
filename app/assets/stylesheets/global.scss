@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'nulshock';
+  src:font-url('nulshock.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  background-image:asset_url('background.jpg');
+  background-size:cover;
+}
+
+.box{
+  margin-left:auto;
+  margin-right:auto;
+  width:500px;
+  height:500px;
+  border:5px solid rgba(3,100,132,0.8);
+  border-radius:15px;
+  background-color: rgba(3,100,132,0.2);
+  margin-top:300px;
+}
+
+.box-title{
+  text-align:center;
+  color:white;
+  font-family: 'nulshock';
+  font-size:60px;
+}
