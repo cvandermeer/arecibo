@@ -19,6 +19,7 @@ html{
   border-radius:15px;
   background-color: rgba(3,100,132,0.2);
   margin-top:300px;
+  position:relative;
 }
 
 .box-title{
@@ -26,4 +27,38 @@ html{
   color:white;
   font-family: 'nulshock';
   font-size:60px;
+}
+
+.specie{
+  width:200px;
+  height:400px;
+  overflow:hidden;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  img{
+    height:300px;
+    position:absolute;
+    transition:1s;
+  }
+}
+
+.next{
+  position:absolute;
+  top:250px;
+  right:10px;
+  color:white;
+  text-decoration: none;
+  font-size:50px;
+  font-family: 'nulshock';
+}
+
+.previous{
+  position:absolute;
+  top:250px;
+  left:10px;
+  color:white;
+  text-decoration: none;
+  font-size:50px;
+  font-family: 'nulshock';
 }
