@@ -3,10 +3,10 @@ class Planet < ActiveRecord::Base
 
   ### CONSTANTS ###
   cattr_accessor :names
-  self.names = ['Alpha', 'Bravo', 'Charlie', 'Detla', 'Echo',
-                'Foxtrot', 'Golf', 'Hotel', 'India', 'Juliet',
-                'Kilo', 'Lima', 'Mike', 'November', 'Oscar',
-                'Papa', 'Quebec', 'Romeo', 'Sierra', 'Tango',
-                'Uniform', 'Victor', 'Whiskey', 'Xray', 'Yankee',
-                'Zulu']
+  self.names = ['Ara', 'Boalis', 'Chiso', 'Delarium', 'Ember',
+                'Fadeus', 'Goliath', 'Hagaris', 'Innovi', 'Judan',
+                'Kiono', 'Luvo', 'Minos', 'Nalat', 'Onavi',
+                'Polaris', 'Qunoa', 'Risenta', 'Sinser', 'Tivio',
+                'Unos', 'Vicenta', 'Worga', 'Xerox', 'Yaxxo',
+                'Zemda']
 end
