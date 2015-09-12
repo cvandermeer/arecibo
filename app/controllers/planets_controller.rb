@@ -6,10 +6,7 @@ class PlanetsController < ApplicationController
   def create
     @planet = Planet.new
     ### NAME ###
-    letters = ('a'..'z').to_a
-    numbers = ('1'..'9').to_a
-    @planet.name = letters.sample + letters.sample + letters.sample + '-' +
-                numbers.sample + numbers.sample + numbers.sample
+    @planet.name = Planet::names.sample + ' ' + Planet::names.sample
 
     ### ATMOSPHERE ###
     eighty = [true, true, true, false, false]
