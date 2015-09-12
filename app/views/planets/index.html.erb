@@ -1,13 +1,14 @@
 <div class='grid grid-pad'>
   <div class='col-1-1 box'>
     <h1 class='box-title'>Planets</h1>
-    <h2><%= link_to 'Discover new planet', planets_path, method: :post, 
+    <h2><%= link_to 'Discover new planet', planets_path, method: :post,
     data: { disable_with: 'Discovering new planet..' } %></h2>
     <table>
       <thead>
         <tr>
           <td>Name</td>
           <td>Atmosphere</td>
+          <td>Resources</td>
         </tr>
       </thead>
       <tbody>
@@ -15,6 +16,7 @@
           <tr>
             <td><%= planet.name %></td>
             <td><%= planet.atmosphere %></td>
+            <td><%= planet.resources %></td>
           </tr>
         <% end %>
       </tbody>
