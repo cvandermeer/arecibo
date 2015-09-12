@@ -1,5 +1,11 @@
 <div class='grid grid-pad'>
   <div class='col-1-1 box'>
     <h1 class='box-title'>Planets</h1>
+    <h2><%= link_to 'Discover new planet', planets_path, method: :post %></h2>
+    <p>
+      <% @planets.each do |planet| %>
+        <p><%= planet.name %></p>
+      <% end %>
+    </p>
   </div>
 </div>
