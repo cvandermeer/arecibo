@@ -6,7 +6,7 @@ class PlanetsController < ApplicationController
   def create
     @planet = Planet.new
     letters = ('a'..'z').to_a
-    numbers = ('a'..'z').to_a
+    numbers = ('1'..'9').to_a
     @planet.name = letters.sample + letters.sample + letters.sample + '-' +
                 numbers.sample + numbers.sample + numbers.sample
     eighty = [true, true, true, false, false]
