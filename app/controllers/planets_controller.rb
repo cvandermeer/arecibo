@@ -7,7 +7,7 @@ class PlanetsController < ApplicationController
     @planet = Planet.new
     ### NAME ###
     @planet.name = Planet::names.sample + ' ' + Planet::names.sample +
-    ' ' + (Planet.where(name: @planet.name).count + 1).to_s
+    ' ' + (RomanNumerals.to_roman(Planet.where(name: @planet.name).count + 1))
 
     ### ATMOSPHERE ###
     eighty = [true, true, true, false, false]
