@@ -6,7 +6,8 @@ class PlanetsController < ApplicationController
   def create
     @planet = Planet.new
     ### NAME ###
-    @planet.name = Planet::names.sample + ' ' + Planet::names.sample
+    @planet.name = Planet::names.sample + ' ' + Planet::names.sample +
+    ' ' + (Planet.where(name: @planet.name).count + 1).to_s
 
     ### ATMOSPHERE ###
     eighty = [true, true, true, false, false]
