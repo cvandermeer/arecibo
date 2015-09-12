@@ -1,11 +1,23 @@
 <div class='grid grid-pad'>
   <div class='col-1-1 box'>
     <h1 class='box-title'>Planets</h1>
-    <h2><%= link_to 'Discover new planet', planets_path, method: :post %></h2>
-    <p>
-      <% @planets.each do |planet| %>
-        <p><%= planet.name %></p>
-      <% end %>
-    </p>
+    <h2><%= link_to 'Discover new planet', planets_path, method: :post, 
+    data: { disable_with: 'Discovering new planet..' } %></h2>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Atmosphere</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% @planets.each do |planet| %>
+          <tr>
+            <td><%= planet.name %></td>
+            <td><%= planet.atmosphere %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 </div>

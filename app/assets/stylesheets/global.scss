@@ -12,6 +12,25 @@ html{
 
 body{
   color:white;
+  font-family: sans-serif;
+}
+
+table{
+  border-collapse:collapse;
+}
+
+thead{
+  color: black;
+  background: white;
+  font-weight: bold;
+}
+
+td{
+  border:1px solid white;
+  padding:10px;
+}
+
+h1, h2{
   font-family: 'nulshock';
 }
 

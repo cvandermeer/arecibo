@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20150912110901) do
 
   create_table "planets", force: :cascade do |t|
     t.string   "name"
+    t.boolean  "atmosphere"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

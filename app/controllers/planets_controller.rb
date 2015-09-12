@@ -5,6 +5,17 @@ class PlanetsController < ApplicationController
 
   def create
     @planet = Planet.new
-    redirect_to planets_path if @planet.save
+    letters = ('a'..'z').to_a
+    numbers = ('a'..'z').to_a
+    @planet.name = letters.sample + letters.sample + letters.sample + '-' +
+                numbers.sample + numbers.sample + numbers.sample
+    eighty = [true, true, true, false, false]
+    @planet.atmosphere = eighty.sample
+
+    if @planet.save
+      redirect_to planets_path
+    else
+      redirect_to planets_path
+    end
   end
 end
