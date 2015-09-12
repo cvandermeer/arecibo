@@ -14,7 +14,7 @@ html{
   margin-left:auto;
   margin-right:auto;
   width:500px;
-  height:500px;
+  height:460px;
   border:5px solid rgba(3,100,132,0.8);
   border-radius:15px;
   background-color: rgba(3,100,132,0.2);
@@ -26,12 +26,12 @@ html{
   text-align:center;
   color:white;
   font-family: 'nulshock';
-  font-size:60px;
+  font-size:40px;
 }
 
 .specie{
   width:200px;
-  height:400px;
+  height:350px;
   overflow:hidden;
   position:relative;
   margin-left:auto;
@@ -61,4 +61,19 @@ html{
   text-decoration: none;
   font-size:50px;
   font-family: 'nulshock';
+}
+
+.specie_name{
+  color:white;
+  position:absolute;
+  bottom:0;
+  font-family: 'nulshock';
+  overflow:hidden;
+  text-align:center;
+  width:100%;
+  margin-bottom:0;
+}
+
+.specie_name.cynode{
+  display:none;
 }
