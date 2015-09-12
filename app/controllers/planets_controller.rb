@@ -14,7 +14,7 @@ class PlanetsController < ApplicationController
     @planet.atmosphere = eighty.sample
 
     ### RESOURCES ###
-    amount = [1, 2, 3].sample
+    amount = [0, 0, 0, 1, 1, 1, 1, 2, 2, 3].sample
     resources = ['Iron', 'Copper', 'Coal'].sample(amount)
     @planet.resources += resources
 
