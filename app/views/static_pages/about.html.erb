@@ -1,12 +1,8 @@
-<div class='box'>
-  <h1 class='box-title'>Choose species</h1>
-  <div class='specie'>
+<div class='grid grid-pad'>
+  <div class='col-1-1 box'>
+    <h1 class='box-title'>Choose species</h1>
     <%= link_to(planets_path) do %>
-      <%= image_tag 'species.png' %>
-      <h2 class='specie_name drogan'>Drogan</h2>
-      <h2 class='specie_name cynode'>Cynode</h2>
+      <h1 class='box-title'><%= image_tag 'species.png' %></h1>
     <% end %>
   </div>
-  <a href='#' class='next'>-></a>
-  <a href='#' class='previous'><-</a>
 </div>
